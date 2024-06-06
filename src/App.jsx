@@ -16,6 +16,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/' element={<Category />}/>
+        <Route path='/' element={<Category />}/>
+        <Route path='/' element={<Category />}/>
+        <Route path='/' element={<Product />}/>
+         <Route path=':productId' element={<Category />}/>
+        <Route path='/' element={<Cart />}/>
       </Routes>
    </BrowserRouter>
   </main>
