@@ -4,6 +4,8 @@ import Header from './components/header/Header'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Category from './pages/Category'
+import Cart from './pages/Cart'
+import Login from './pages/Login'
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
         <Route path='/' element={<Product />}/>
          <Route path=':productId' element={<Category />}/>
         <Route path='/' element={<Cart />}/>
+        <Route path='/' element={<Login />}/>
       </Routes>
    </BrowserRouter>
   </main>
