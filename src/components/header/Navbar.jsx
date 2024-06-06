@@ -4,7 +4,7 @@ import { MdHomeFilled } from "react-icons/md"
 function Navbar({containStyles}) {
   return (
     <nav className={`${containStyles}`}>
-      <NavLink><div><MdHomeFilled/>Home</div></NavLink>
+      <NavLink to={'/'}><div className="flex"><MdHomeFilled/>Home</div></NavLink>
     </nav>
   )
 }
