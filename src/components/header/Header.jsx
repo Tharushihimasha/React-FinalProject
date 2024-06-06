@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 function Header() {
   return (
     <header className="fixed top-0 left-0 m-auto max_padd_container w-full bg-white ring-1
-     ring-slate-900/5 z-10 ">
+     ring-slate-900/5 z-10 h-0">
       <div className="flex gap-x-[400px]  pt-4 pl-4 items-center flex-wrap">
         {/* logo */}
         <div className="">
