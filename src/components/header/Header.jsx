@@ -3,7 +3,7 @@ import logo from '../../assets/logo.jpg'
 import Navbar from "./Navbar";
 import { useState } from "react";
 import { MdMenu,MdClose} from "react-icons/md"
-import { FaOpencart } from "react-icons/fa"
+import { FaOpencart, FaUser} from "react-icons/fa"
 import { RiLogoutCircleLine } from "react-icons/ri";
 
 
@@ -25,7 +25,7 @@ function Header() {
         <Navbar containStyles={`${menuOpened ? "flex item-start flex-col gap-y-12 fixed top-20 right-8 p-12 bg-white rounded-3xl shadow-md w-64 medium-16 ring-1 ring-slate-900/5 transitaion-all duration-300" 
           : "flex item-start flex-col gap-y-12 fixed top-20  p-12 bg-white rounded-3xl shadow-md w-64 medium-16 ring-1 ring-slate-900/5 transitaion-all duration-300 -right-[100%]"}`}/>
         {/* button */}
-        <div className="flexBetween sm:gap-x-6 bold-16">
+        <div className="flexBetween sm:gap-x-2 bold-16">
           {!menuOpened? (
             <MdMenu className="md:hidden cursor-pointer hover:text-secondary
             mr-2 p-1 ring-1 ring-slate-900/30 h-8 w-8 rounded-full" onClick={toggleMenu}/>
@@ -36,7 +36,8 @@ function Header() {
              <NavLink to={'cart-page'} className={"flex"}><FaOpencart className="p-1 h-8 w-8 ring-state-900/30 ring-1
              rounded-full"/><span className="relative flexCenter w-5 h-5
               rounded-full bg-secondary text-white medium-14 -top-1.5">0</span></NavLink>
-             <NavLink to={'logout'} className={"btn_secondary_rounded flexCenter"} ><RiLogoutCircleLine className="w-7 h-5 mr-1" />Logout</NavLink>
+             {/* <NavLink to={'logout'} className={"btn_secondary_rounded flexCenter"} ><RiLogoutCircleLine className="w-7 h-5 mr-1" />Logout</NavLink> */}
+             <NavLink to={'login'} className={"btn_secondary_rounded flexCenter"} ><FaUser className="w-7 h-4 mr-1" />Login</NavLink>
            </div>
         </div>
 
