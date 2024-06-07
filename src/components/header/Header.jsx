@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import logo from '../../assets/logo.jpg'
 import Navbar from "./Navbar";
 import { useState } from "react";
+import { MdMenu,MdClose} from "react-icons/md"
 
 function Header() {
    
@@ -24,7 +25,7 @@ function Header() {
           {!menuOpened? (
             <MdMenu />
           ) : (
-           <Mdclose /> )}
+           <MdClose /> )}
         </div>
       </div>
     </header>
