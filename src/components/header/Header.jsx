@@ -31,7 +31,7 @@ function Header() {
            <MdClose  className="md:hidden cursor-pointer hover:text-secondary
            mr-2 p-1 ring-1 ring-slate-900/30 h-8 w-8 rounded-full" onClick={toggleMenu}/> )}
            <div className="flexBetween sm:gap-x-6">
-               <NavLink to={'/cart-page'} className={flex}></NavLink>
+               <NavLink to={'/cart-page'} className={"flex"}></NavLink>
            </div>
         </div>
       </div>
