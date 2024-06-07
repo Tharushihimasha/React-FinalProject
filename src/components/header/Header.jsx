@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import { useState } from "react";
 import { MdMenu,MdClose} from "react-icons/md"
 import { FaOpencart } from "react-icons/fa"
+import { RiLogoutCircleLine } from "react-icons/ri";
 
 
 function Header() {
@@ -35,6 +36,7 @@ function Header() {
              <NavLink to={'cart-page'} className={"flex"}><FaOpencart className="p-1 h-8 w-8 ring-state-900/30 ring-1
              rounded-full"/><span className="relative flexCenter w-5 h-5
               rounded-full bg-secondary text-white medium-14 -top-1.5">0</span></NavLink>
+             <NavLink to={'logout'} className={"btn_secondary_rounded flexCenter"} ><RiLogoutCircleLine className="w-7 h-5 mr-1" />Logout</NavLink>
            </div>
         </div>
 
