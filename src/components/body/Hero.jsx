@@ -1,4 +1,4 @@
-import { MdStar } from 'react-icons/md'
+import { MdStar,MdOutlineLocalOffer } from 'react-icons/md'
 
 function Hero() {
   return (
@@ -15,9 +15,14 @@ function Hero() {
                     <MdStar />
                     <MdStar />
                 </div>
-                <div className='bold-16 sm:bold-20'>176k <span className='regular-16 sm:regular-20'>Excellent Reviews</span>
-
+                <div className='bold-16 sm:bold-20'>176k <span 
+                className='regular-16 sm:regular-20'>Excellent Reviews</span>
                 </div>
+            </div>
+            <div className='max-xs:flex-col flex gap-2'>
+                <div className={"btn_dark_rounded flexCenter"}>Shop now</div>
+                <div  className={"btn_dark_rounded flexCenter gap-x-2"}>
+                    <MdOutlineLocalOffer className="text-2xl"/>Offer</div>
             </div>
         </div>
      </section>
