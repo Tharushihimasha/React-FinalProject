@@ -34,7 +34,7 @@ function Header() {
            <div className="flexBetween sm:gap-x-6">
              <NavLink to={'cart-page'} className={"flex"}><FaOpencart className="p-1 h-8 w-8 ring-state-900/30 ring-1
              rounded-full"/><span className="relative flexCenter w-5 h-5
-              rounded-full bg-secondary text-white medium-14 -top-20">0</span></NavLink>
+              rounded-full bg-secondary text-white medium-14 -top-1.5">0</span></NavLink>
            </div>
         </div>
 
