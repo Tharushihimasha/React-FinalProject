@@ -6,7 +6,8 @@ import { MdMenu,MdClose} from "react-icons/md"
 
 function Header() {
    
-     const [menuOpened,setmenuOpened] = useState(false)
+     const [menuOpened,setmenuOpened] = useState(false);
+     const toggleMenu = () => setmenuOpened(!menuOpened);
   return (
     <header className="fixed top-0 left-0 m-auto max_padd_container w-full bg-white ring-1 ring-slate-900/5
     z-10">
@@ -23,9 +24,11 @@ function Header() {
         {/* button */}
         <div >
           {!menuOpened? (
-            <MdMenu />
+            <MdMenu className="md:hidden cursor-pointer hover:text-secondary
+            mr-2 p-1 ring-1 ring-slate-900/30 h-8 w-8 rounded-full" onClick={toggleMenu}/>
           ) : (
-           <MdClose /> )}
+           <MdClose  className="md:hidden cursor-pointer hover:text-secondary
+           mr-2 p-1 ring-1 ring-slate-900/30 h-8 w-8 rounded-full" onClick={toggleMenu}/> )}
         </div>
       </div>
     </header>
