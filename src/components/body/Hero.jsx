@@ -1,5 +1,6 @@
 import { MdStar,MdOutlineLocalOffer } from 'react-icons/md'
 
+
 function Hero() {
   return (
      <section>
@@ -24,6 +25,9 @@ function Hero() {
                 <div  className={"btn_dark_rounded flexCenter gap-x-2"}>
                     <MdOutlineLocalOffer className="text-2xl"/>Offer</div>
             </div>
+        </div>
+        <div>
+            
         </div>
      </section>
   )
