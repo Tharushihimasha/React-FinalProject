@@ -1,4 +1,4 @@
-import React from 'react'
+import { MdStar } from 'react-icons/md'
 
 function Hero() {
   return (
