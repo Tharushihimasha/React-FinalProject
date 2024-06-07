@@ -15,6 +15,9 @@ function Hero() {
                     <MdStar />
                     <MdStar />
                 </div>
+                <div className='bold-16 sm:bold-20'>176k <span className='regular-16 sm:regular-20'>Excellent Reviews</span>
+
+                </div>
             </div>
         </div>
      </section>
