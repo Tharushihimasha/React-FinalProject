@@ -9,7 +9,7 @@ function Hero() {
             <p className='text-gray-50 regular-16 mt-6 max-w-[33rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias laudantium tempora porro sapiente repudiandae neque eos pariatur quo ea ab, impedit ducimus. Veniam modi officiis iste voluptatibus quidem aspernatur!
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, eaque sit provident nam harum quis dolorem, alias nulla exercitationem sunt rem sequi, distinctio illum. Aperiam voluptatibus repellendus id asperiores numquam.
             </p>
-            <div className='flexStart !items-center gap-x-4 my-10'>
+            <div className='flexStart !items-center gap-x-4 my-5'>
                 <div className='!regular-24 flexCenter gap-x-3'>
                     <FaStar />
                     <FaStar />
