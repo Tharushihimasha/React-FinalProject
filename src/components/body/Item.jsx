@@ -1,8 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Item({id, name, image, old_price, new_price}) {
   return (
-    <div>Item</div>
+    <div>
+        <div>
+            <Link to={`product/${id}`}></Link>
+        </div>
+    </div>
   )
 }
 
