@@ -1,5 +1,6 @@
 import React from 'react'
 import POPULAR from '../../assets/popular'
+import Item from './Item'
 
 function Popular() {
   return (
@@ -10,7 +11,7 @@ function Popular() {
             {/* container */}
             <div>
                 {POPULAR.map((item) => (
-                    <Item />
+                    <Item  key={item.id} id={item.id}/>
                 ))}
             </div>
         </div>
