@@ -24,14 +24,14 @@ function Footer() {
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
                   {FOOTER_CONTACT_INFO.links.map((link) => (
                     <Link to="/" key={link.label} className='flex gap-4 md:flex-col lg:flex-row'>
-                       <p>{link.label}:</p><p>{link.value}</p>
+                       <p>{link.label}:</p><p children='medium-14'>{link.value}</p>
                     </Link>
                   ))}
               </FooterColumn>
             </div>
-            <div>
+            <div className='flex'>
               <FooterColumn>
-                <ul>
+                <ul className='flex gap-4'>
                   {SOCIALS.links.map((link) =>(
                     <Link to="/" key={link}><img src={link} alt="socialIcon"
                     height={22} width={22}></img></Link>
