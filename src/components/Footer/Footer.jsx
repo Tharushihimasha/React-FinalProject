@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import FOOTER_LINKS from '../../assets/footer_links'
+import FOOTER_CONTACT_INFO from '../../assets/footer_contact'
+import SOCIALS from '../../assets/socials'
 
 function Footer() {
   return (
@@ -19,16 +21,30 @@ function Footer() {
               </FooterColumn>
             ))}
             <div>
-              <FooterColumn title={FOOter_CONTACT_INFO.title}>
-                  {FOOter_CONTACT_INFO.links.map((link) => (
-                    <link to="/" key={link.label}>
-                       <p>{link.label}</p>
-                    </link>
+              <FooterColumn title={FOOTER_CONTACT_INFO.title}>
+                  {FOOTER_CONTACT_INFO.links.map((link) => (
+                    <Link to="/" key={link.label}>
+                       <p>{link.label}:</p><p>{link.value}</p>
+                    </Link>
                   ))}
+              </FooterColumn>
+            </div>
+            <div>
+              <FooterColumn>
+                <ul>
+                  {SOCIALS.links.map((link) =>(
+                    <Link to="/" key={link}><img src={link} alt="socialIcon"
+                    height={22} width={22}></img></Link>
+                  ))}
+                </ul>
               </FooterColumn>
             </div>
           </div>
         </div>
+        <div className='border bg-gray-20'></div>
+        <p children='text-center-regular-14 text-gray-30'>
+          2024 Shoppee | All rights reserved.
+        </p>
       </div>
     </footer>
   )
