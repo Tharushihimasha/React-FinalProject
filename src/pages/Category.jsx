@@ -1,6 +1,10 @@
-function Category() {
+import React from 'react'
+
+const Category = ({Category,banner}) => {
   return (
-    <div>Category</div>
+    <div>
+      
+    </div>
   )
 }
 
