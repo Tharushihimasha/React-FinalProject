@@ -3,7 +3,7 @@ import {TbArrowRight} from 'react-icons/tb'
 
 const ProductHd = (props) => {
 
-  const { product } =props;
+  const { product } = props;
   return (
     <div>
       Home <TbArrowRight /> Shop <TbArrowRight /> {product.category}

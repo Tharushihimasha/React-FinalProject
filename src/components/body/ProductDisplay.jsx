@@ -3,11 +3,12 @@ import product_rt_1 from '../../assets/product_rt_1.png'
 import product_rt_2 from '../../assets/product_rt_2.png'
 import product_rt_3 from '../../assets/product_rt_3.png'
 import product_rt_4 from '../../assets/product_rt_4.png'
+import {MdStar} from "react-icons/md"
 
 const ProductDisplay = (props) => {
 
-  const product = props;
-  
+  const {product} = props;
+
   return (
     <section>
         <div>
@@ -21,6 +22,12 @@ const ProductDisplay = (props) => {
                 <div>
                   <img src={product.image} alt="" />
                 </div>
+            </div>
+            <div>
+              <h3>{product.name}</h3>
+              <div>
+                <MdStar />
+              </div>
             </div>
         </div>
     </section>
