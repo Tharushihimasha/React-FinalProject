@@ -1,5 +1,7 @@
 import React from 'react'
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
+import all_products from '../assets/all_products'
+import Item from '../components/body/Item'
 
 const Category = ({Category,banner}) => {
   return (
@@ -11,6 +13,14 @@ const Category = ({Category,banner}) => {
         <div>
           <h5><span>Showing 1-12</span>Out Of 36 Products</h5>
           <div>Sort by<MdOutlineKeyboardArrowDown/></div>
+        </div>
+        <div>
+          {all_products.map((item) => {
+            if (Category) {
+              return <Item  key={item.id} id={item.id} image={item.image} name={item.name} 
+              new_price={item.new_price} old_price={item.old_price}/>
+            }
+          })}
         </div>
       </div>
     </section>
