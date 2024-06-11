@@ -11,7 +11,7 @@ const Product = () => {
   return (
     <section>
       <div>
-        <ProductHd  product={}/>
+        <ProductHd  product={product}/>
       </div>
     </section>
   )
