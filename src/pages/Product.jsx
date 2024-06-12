@@ -4,6 +4,8 @@ import { ShopContext } from '../Context/ShopContext';
 import { useParams } from 'react-router-dom';
 import ProductHD from '../components/ProductHD';
 import ProductDisplay from '../components/ProductDisplay';
+import ProductDescription from '../components/ProductDescription';
+import RelateProducts from '../components/RelateProducts';
 
 
 const Product = () => {
@@ -19,6 +21,8 @@ const Product = () => {
       <div>
        <ProductHD product={product}/>
        <ProductDisplay product={product} />
+       <ProductDescription />
+       <RelateProducts />
       </div>
     </section>
 

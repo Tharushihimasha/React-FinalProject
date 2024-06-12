@@ -1,0 +1,30 @@
+import React from 'react'
+
+const ProductDescription = () => {
+  return (
+    <div className='mt-20'>
+      <div className='flex gap-3 mb-4'>
+        <button className='btn_dark_rounded !rounded-none !text-xs !py-[6px]
+         w-36'>Description</button>
+         <button className='btn_dark_outline !rounded-none !text-xs !py-[6px]
+          w-36'>Care Guide</button>
+          <button className='btn_dark_outline !rounded-none !text-xs !py-[6px] 
+          w-36'>Size Guide</button>
+      </div>
+      <div className='flex flex-col pd-16'>
+        <p className='text-sm'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vel magnam accusamus labore, at voluptatibus praesentium et, illo laudantium, id deleniti a nam aliquid aliquam. Unde adipisci, culpa sapiente ipsam rerum a qui amet quos ipsa consectetur earum laborum ex in, quia est reiciendis beatae fugiat optio, odit ab quaerat saepe harum itaque. A eos ducimus, veritatis quaerat porro eaque autem fuga perferendis cumque similique harum quas corporis atque magni aliquam tempore quam debitis rem inventore, delectus repellat! Similique molestias asperiores necessitatibus aut cumque eum vero dolore tenetur, corporis minus nostrum, qui neque magnam? Cum nihil, culpa, quod, in voluptatibus dolor esse itaque dicta tenetur veniam quam optio! Non culpa vero at eos dolorum, corporis facilis blanditiis iure mollitia quis ab temporibus tempore et consequuntur autem, enim neque, optio dicta incidunt explicabo. Odio optio quis itaque animi aliquam a debitis, adipisci praesentium rerum cumque, veritatis dignissimos accusamus explicabo tenetur alias sequi ullam est? Explicabo sapiente nobis alias magnam saepe ratione dolor. Eum quas dolorum reprehenderit molestias tempore, culpa reiciendis possimus veniam harum perspiciatis excepturi, commodi, placeat maxime saepe atque soluta officia est aliquam enim voluptas beatae nemo sequi? Exercitationem officiis optio, iste, ad dolorem totam laudantium quo sequi maxime sint animi officia! Quisquam fugiat eveniet sunt harum perferendis. Dolore omnis reiciendis eum enim obcaecati qui aperiam iste dolorum assumenda nesciunt iure, ea, molestiae ratione adipisci natus! Repudiandae quidem id minima, laborum voluptates ad atque obcaecati nisi pariatur labore placeat voluptate, saepe facere repellendus praesentium? Accusantium, eveniet voluptas maxime ea quisquam tenetur tempora iure, laboriosam neque in harum cupiditate. Adipisci eos veniam explicabo cumque ullam enim quidem eveniet iure qui aut, porro dolor nobis ratione sequi quod tempora, unde officiis iste error neque magni labore? Aut nihil in vel nulla pariatur maxime, ea itaque. Sequi aliquid quisquam quasi repellat et? Praesentium laudantium quaerat, voluptates architecto id repellendus vero numquam? Veniam minima quidem incidunt, aliquid similique, nobis porro animi explicabo obcaecati rem facilis sequi harum. Non ullam quasi nulla 
+          architecto fugit delectus quaerat cupiditate aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, ex voluptate quidem aut cum nisi ut dignissimos voluptatem adipisci? Atque officia quidem labore, doloribus deleniti accusantium
+           nostrum eaque laudantium quos!
+        </p>
+        <p className='text-sm'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vel magnam accusamus labore, at voluptatibus praesentium et, illo laudantium, id deleniti a nam aliquid aliquam. Unde adipisci, culpa sapiente ipsam rerum a qui amet quos ipsa consectetur earum laborum ex in, quia est reiciendis beatae fugiat optio, odit ab quaerat saepe harum itaque. A eos ducimus, veritatis quaerat porro eaque autem fuga perferendis cumque similique harum quas corporis atque magni aliquam tempore quam debitis rem inventore, delectus repellat! Similique molestias asperiores necessitatibus aut cumque eum vero dolore tenetur, corporis minus nostrum, qui neque magnam? Cum nihil, culpa, quod, in voluptatibus dolor esse itaque dicta tenetur veniam quam optio! Non culpa vero at eos dolorum, corporis facilis blanditiis iure mollitia quis ab temporibus tempore et consequuntur autem, enim neque, optio dicta incidunt explicabo. Odio optio quis itaque animi aliquam a debitis, adipisci praesentium rerum cumque, veritatis dignissimos accusamus explicabo tenetur alias sequi ullam est? Explicabo sapiente nobis alias magnam saepe ratione dolor. Eum quas dolorum reprehenderit molestias tempore, culpa reiciendis possimus veniam harum perspiciatis excepturi, commodi, placeat maxime saepe atque soluta officia est aliquam enim voluptas beatae nemo sequi? Exercitationem officiis optio, iste, ad dolorem totam laudantium quo sequi maxime sint animi officia! Quisquam fugiat eveniet sunt harum perferendis. Dolore omnis reiciendis eum enim obcaecati qui aperiam iste dolorum assumenda nesciunt iure, ea, molestiae ratione adipisci natus! Repudiandae quidem id minima, laborum voluptates ad atque obcaecati nisi pariatur labore placeat voluptate, saepe facere repellendus praesentium? Accusantium, eveniet voluptas maxime ea quisquam tenetur tempora iure, laboriosam neque in harum cupiditate. Adipisci eos veniam explicabo cumque ullam enim quidem eveniet iure qui aut, porro dolor nobis ratione sequi quod tempora, unde officiis iste error neque magni labore? Aut nihil in vel nulla pariatur maxime, ea itaque. Sequi aliquid quisquam quasi repellat et? Praesentium laudantium quaerat, voluptates architecto id repellendus vero numquam? Veniam minima quidem incidunt, aliquid similique, nobis porro animi explicabo obcaecati rem facilis sequi harum. Non ullam quasi nulla 
+          architecto fugit delectus quaerat cupiditate aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, ex voluptate quidem aut cum nisi ut dignissimos voluptatem adipisci? Atque officia quidem labore, doloribus deleniti accusantium
+           nostrum eaque laudantium quos!
+        </p>
+      </div>
+    </div>
+  )
+}
+
+export default ProductDescription
