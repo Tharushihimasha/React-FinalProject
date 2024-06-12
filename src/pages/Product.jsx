@@ -2,7 +2,8 @@ import React from 'react'
 import { useContext } from 'react';
 import { ShopContext } from '../Context/ShopContext';
 import { useParams } from 'react-router-dom';
-import ProductHd from '../components/body/ProductHd';
+import ProductHD from '../components/ProductHD';
+
 
 const Product = () => {
 
@@ -15,10 +16,11 @@ const Product = () => {
   return (
     <section>
       <div>
-        <ProductHd product={product}/>
-        <ProductDisplay product={product} />
+       <ProductHD product={product}/>
+      
       </div>
     </section>
+
   )
 }
 

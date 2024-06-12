@@ -3,12 +3,13 @@ import all_products from '../assets/all_products'
 
 export const ShopContext = createContext(null);
 
-const ShopContextProvider = (props) =>{
-    const contextValue = {all_products};
+const ShopContextProvider = (props) => {
 
-    return(
+    const contextValue = { all_products };
+
+    return (
         <ShopContext.Provider value={contextValue}>
-           {props.children}
+            {props.children}
         </ShopContext.Provider>
     )
 }
