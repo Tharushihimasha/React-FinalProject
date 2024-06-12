@@ -6,7 +6,7 @@ const CartItems = () => {
     const {all_products, cartItems, removeFromCart} = useContext(ShopContext);
 
   return (
-    <section>
+    <section className='max_padd-container pt-28'>
         <table>
             <thead>
                 <tr>
@@ -24,7 +24,9 @@ const CartItems = () => {
                         return <tr> key={e.id}
                             <td><img src={e.image} alt="produImg" height={43} width={43}/></td>
                             <td><div>{e.name}</div></td>
-                            <td>{e.new_price}</td>
+                            <td>${e.new_price}</td>
+                            <td>{cartItems[e.id]}</td>
+                            <td>${e.new_price * cartItems[e.id]}</td>
                             <td>{e.old_price}</td>
                         </tr>
                     }
