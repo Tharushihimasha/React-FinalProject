@@ -8,6 +8,7 @@ import {MdStar} from "react-icons/md"
 const ProductDisplay = (props) => {
 
   const {product} = props;
+  const {addToCart} = useContext(ShopContext);
 
   return (
     <section>
