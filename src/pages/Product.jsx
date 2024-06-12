@@ -15,7 +15,7 @@ const Product = () => {
     return <div>Product not Found!</div>
   }
   return (
-    <section>
+    <section className='max_padd_container py-20' >
       <div>
        <ProductHD product={product}/>
        <ProductDisplay product={product} />

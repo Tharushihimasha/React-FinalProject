@@ -11,9 +11,9 @@ const ProductDisplay = (props) => {
 
   return (
     <section>
-        <div>
-            <div>
-                <div>
+        <div className='flex flex-col gap-14 xl:flex-row'>
+            <div className='flex gap-x-2'>
+                <div className='flex flex-col gap-[7px] flex-wrap'>
                     <img src={product_rt_1} alt="practImg" className='max-h-[99px]'/>
                     <img src={product_rt_2} alt="practImg" className='max-h-[99px]'/>
                     <img src={product_rt_3} alt="practImg" className='max-h-[99px]'/>
@@ -23,10 +23,37 @@ const ProductDisplay = (props) => {
                   <img src={product.image} alt="" />
                 </div>
             </div>
-            <div>
-              <h3>{product.name}</h3>
-              <div>
+            <div className='flex-col flex'>
+              <h3 className='h3'>{product.name}</h3>
+              <div className='flex gap-x-2 text-secondary medium-22'>
                 <MdStar />
+                <MdStar />
+                <MdStar />
+                <MdStar />
+                <p>(111)</p>
+              </div>
+              <div>
+                <div> {product.old_price} </div>
+                <div> {product.new_price} </div>
+              </div>
+              <div>
+                <h4>Select Size</h4>
+                <div className='flex gap-3 my-3'>
+                  <div className='ring-2 ring-slate-900 h-10 w-10 flexCenter
+                  cursor-pointer'>S</div>
+                  <div className='ring-2 ring-slate-900/10 h-10 w-10 flexCenter
+                  cursor-pointer'>M</div>
+                  <div className='ring-2 ring-slate-900/100 h-10 w-10 flexCenter
+                  cursor-pointer'>L</div>
+                  <div className='ring-2 ring-slate-900/10 h-10 w-10 flexCenter
+                  cursor-pointer'>XL</div>
+                </div>
+                <div>
+                  <button>Add to cart</button>
+                  <button>Buy it now</button>
+                </div>
+                <p><span>Category :</span> Women | Jacket | Winter</p>
+                <p><span>Tags :</span> Modren | Latest</p>
               </div>
             </div>
         </div>
