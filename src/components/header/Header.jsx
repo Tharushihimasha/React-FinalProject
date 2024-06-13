@@ -1,16 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/logo.jpg'
 import Navbar from "./Navbar";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { MdMenu,MdClose} from "react-icons/md"
 import { FaOpencart, FaUser} from "react-icons/fa"
 import { RiLogoutCircleLine } from "react-icons/ri";
+import { ShopContext } from "../../Context/ShopContext";
 
 
 function Header() {
    
      const [menuOpened,setmenuOpened] = useState(false);
      const toggleMenu = () => setmenuOpened(!menuOpened);
+     const {getTotalCartItems} = useContext(ShopContext);
   return (
     <header className="fixed top-0 left-0 m-auto max_padd_container w-full bg-white ring-1 ring-slate-900/5
     z-10">
@@ -35,7 +37,7 @@ function Header() {
            <div className="flexBetween sm:gap-x-6">
              <NavLink to={'cart-page'} className={"flex"}><FaOpencart className="p-1 h-8 w-8 ring-state-900/30 ring-1
              rounded-full"/><span className="relative flexCenter w-5 h-5
-              rounded-full bg-secondary text-white medium-14 -top-1.5">0</span></NavLink>
+              rounded-full bg-secondary text-white medium-14 -top-1.5">{getTotalCartItems()}</span></NavLink>
              {/* <NavLink to={'logout'} className={"btn_secondary_rounded flexCenter"} ><RiLogoutCircleLine className="w-7 h-5 mr-1" />Logout</NavLink> */}
              <NavLink to={'login'} className={"btn_secondary_rounded flexCenter"} ><FaUser className="w-7 h-4 mr-1" />Login</NavLink>
            </div>
